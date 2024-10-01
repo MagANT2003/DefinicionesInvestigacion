@@ -20,6 +20,8 @@ public class temas {
         tema2 = "ARTE POR IA";
         Definicion1 = "El arte clásico se refiere al estilo artístico que se desarrolló principalmente en las antiguas civilizaciones de Grecia y Roma, aproximadamente desde el siglo V a.C. hasta el siglo IV d.C. Este estilo está caracterizado por su búsqueda de la armonía, el equilibrio, la proporción, y la belleza idealizada. En su época, se consideraba un reflejo de la perfección, tanto en la forma humana como en la naturaleza y la arquitectura.";
         Definicion2 = "El concepto de arte generado por IA (inteligencia artificial) se refiere al uso de algoritmos y sistemas de aprendizaje automático para crear obras artísticas, ya sea visuales, musicales, literarias, o de otro tipo. A diferencia del arte clásico, que busca la perfección y el ideal de la belleza, el arte por IA se caracteriza por su capacidad para explorar nuevos estilos, combinaciones y conceptos que pueden desafiar las tradiciones artísticas convencionales.";
+        Referencia1 = "•	Pincelada de Historia. (2022, 21 noviembre). El arte Clásico - Pincelada de Historia. ";
+        Referencia2 = "•	Arte generado por Inteligencia Artificial y su impacto en artistas – Arte es Ética. (s. f.). ";
     }
     
     
@@ -28,7 +30,26 @@ public class temas {
     private String tema2;
     private String Definicion1;
     private String Definicion2;
+    private String Referencia1;
+    private String Referencia2;
 
+    public String getReferencia1() {
+        return Referencia1;
+    }
+
+    public void setReferencia1(String Referencia1) {
+        this.Referencia1 = Referencia1;
+    }
+
+    public String getReferencia2() {
+        return Referencia2;
+    }
+
+    public void setReferencia2(String Referencia2) {
+        this.Referencia2 = Referencia2;
+    }
+    
+    
     public String getTema1() {
         return tema1;
     }
