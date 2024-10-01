@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temas Diferentes</title>
+    <!-- Incluyendo Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            background-image: url('images/Fondo.jpg'); /* URL de la imagen de fondo */
+            background-size: 2000px; /* La imagen cubrirá todo el fondo */
+            background-attachment: fixed; /* La imagen permanecerá fija al hacer scroll */
+            background-position: center; /* Centrar la imagen */
+            background-repeat: no-repeat; /* No repetir la imagen */
+        }
+        .concepto {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .tema {
+            margin-bottom: 30px;
+        }
+        /* Para que la imagen se adapte al tamaño del texto */
+        .img-fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Asegurar que la columna de la imagen tenga la misma altura que la del texto */
+        .col-md-6 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <p> </p>
+    <div class="container">
+        <!-- Tema 1 -->
+        <div class="row tema">
+            <div class="col-md-6">
+                <img src="images/Arteclasico.jpg" alt="Tema 1" class="img-fluid" />
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="concepto">
+                    <h2>#{temas.tema1}</h2>
+                    <p>
+                    #{temas.definicion1}  
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="row tema">
+            <div class="col-md-6">
+                <img src="images/Arteia.jpg" alt="Tema 2" class="img-fluid" />
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="concepto">
+                    <h2>#{temas.tema2}</h2>
+                    <p>
+                    #{temas.definicion2}  
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
